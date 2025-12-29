@@ -182,15 +182,14 @@ The platform enforces a **layered invocation model** to ensure clear separation 
 
 ### Mandatory Control-Plane Invocation
 Any action that performs **policy enforcement**, **state mutation**, or **destructive operations** MUST follow this chain.
-```
+
 The following invocation chain is **mandatory**:
-    ```
+```
     Repository Workflow
     ↓
     Reusable Workflow
     ↓
     Reusable Action
-    ```
 ```
 This applies to:
 - Versioning and tagging
