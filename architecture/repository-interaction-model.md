@@ -172,8 +172,7 @@ The goal is to:
 - Secrets retrieval unless explicitly passed
 - Environment awareness
 
-> Reusable actions do the work —  
-> they do **not** decide *whether* the work should happen.
+> Reusable actions do the work —  they do **not** decide *whether* the work should happen.
 
 ---
 
@@ -183,7 +182,7 @@ The platform enforces a **layered invocation model** to ensure clear separation 
 
 ### Mandatory Control-Plane Invocation
 Any action that performs **policy enforcement**, **state mutation**, or **destructive operations** MUST follow this chain.
-
+```
 The following invocation chain is **mandatory**:
     ```
     Repository Workflow
@@ -192,7 +191,7 @@ The following invocation chain is **mandatory**:
     ↓
     Reusable Action
     ```
-
+```
 This applies to:
 - Versioning and tagging
 - Terraform plan/apply
