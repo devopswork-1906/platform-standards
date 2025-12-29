@@ -26,8 +26,7 @@ The goal is to:
    - [Mandatory Control-Plane Invocation](#mandatory-control-plane-invocation)
    - [Allowed Direct Action Invocation (Utility Actions)](#allowed-direct-action-invocation-utility-actions)
 3. [Explicit Non-Goals](#explicit-non-goals)
-4. [Golden Rule](#golden-rule)
-5. [Enforcement](#enforcement)
+4. [Enforcement](#enforcement)
 
 ## Repository Types & Responsibilities
 
@@ -235,14 +234,6 @@ The platform model intentionally does **not** support:
 - Modules managing Terraform state backends
 - CI logic duplicated across repositories
 - Reusable actions implementing policy decisions or approval logic
-
----
-
-## Golden Rule
-
-> **Repositories trigger workflows.  
-> Workflows enforce policy.  
-> Actions execute tasks.**
 
 ---
 
