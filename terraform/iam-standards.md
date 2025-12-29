@@ -96,9 +96,6 @@ Typical valid examples:
 - Broad service-level permissions
 - Reusable access patterns
 
-> **Rule of thumb:**  
-> If the policy could be reused elsewhere, it should NOT be inline.
-
 ---
 
 ## Trust Policy Standards

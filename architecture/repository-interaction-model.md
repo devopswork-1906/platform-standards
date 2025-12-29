@@ -25,7 +25,6 @@ The goal is to:
 2. [Invocation Model](#invocation-model)
    - [Mandatory Control-Plane Invocation](#mandatory-control-plane-invocation)
    - [Allowed Direct Action Invocation (Utility Actions)](#allowed-direct-action-invocation-utility-actions)
-   - [Rule of Thumb](#rule-of-thumb)
 3. [Explicit Non-Goals](#explicit-non-goals)
 4. [Golden Rule](#golden-rule)
 5. [Enforcement](#enforcement)
@@ -224,13 +223,6 @@ These actions MUST NOT:
 - Modify repository state (tags, commits)
 - Deploy or destroy infrastructure
 - Bypass approval gates
-
----
-
-### Rule of Thumb
-
-> If an action can change **what** happens → it must go through a reusable workflow.  
-> If an action only helps **how** it happens → it may be used directly.
 
 ---
 
